@@ -8,8 +8,11 @@ const app = Vue.createApp({
         }
     },
     methods:{
-        handleEvent(e){
-            console.log(e)
+        handleEvent(e, data){
+            console.log(e, e.type)
+            if (data){
+                console.log(data)
+            }
         }
     }
 })

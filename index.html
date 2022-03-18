@@ -30,7 +30,7 @@
         <div id = 'mousestuff'>   
         <div class="box" @mouseover='handleEvent'>Mouseover(enter)</div>
         <div class="box"@mouseleave='handleEvent'>Mouse leave</div>
-        <div class="box" @dblclick='handleEvent'>Double click</div>
+        <div class="box" @dblclick='handleEvent($event,5)'>Double click</div>
         <div class="box"></div>
     </div>
 
