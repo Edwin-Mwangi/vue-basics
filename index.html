@@ -11,7 +11,10 @@
 
     <div id = 'app'>
         <!-- called from vue -->
-        <p>{{ title }} - {{author}} - {{age}}</p>
+        <div v-if = "showBooks">
+            <p>{{ title }}</p>
+        </div>
+        
         <button v-on:click = "age++">Increase age</button>
         <div @click = "title = 'Something else'">change title</div>
     </div>
