@@ -6,7 +6,10 @@ const app = Vue.createApp({
             author: 'brandon sand',
             age: 45
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> click-events
     }
 })
 
