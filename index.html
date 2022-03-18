@@ -32,6 +32,26 @@
         <div class="box"@mouseleave='handleEvent'>Mouse leave</div>
         <div class="box" @dblclick='handleEvent($event,5)'>Double click</div>
         <div class="box" @mousemove='handleMousemove'>position - {{ x }} {{ y }}</div>
+        
+        <!-- output lists -->
+
+        
+        <div v-if = 'showBooks' >
+
+            <!-- previous method -->
+            <!-- <p>{{books[0].title}}{{books[0].author}}</p>
+            <p>{{books[1].title}}{{books[1].author}}</p> -->
+
+             <!-- v-for comes in -->
+            <ul>
+                <li v-for = 'book in books' >
+                    <h3>{{book.title}}</h3>
+                    <p>{{book.author}}</p>
+                </li>
+            </ul>
+
+        </div>
+
     </div>
 
     <script src="app.js"></script>

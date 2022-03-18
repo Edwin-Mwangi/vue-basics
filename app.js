@@ -8,7 +8,14 @@ const app = Vue.createApp({
             author: 'brandon sand',
             age: 45,
             x:0,
-            y:0
+            y:0,
+            showBooks: true,
+
+            books: [
+                {title: 'the final date', author: 'Brandon sand'},
+                {title: 'Kings way', author: 'Patrick roth'},
+                {title: 'the final date', author: 'Brenda wynn'}
+            ]
         }
     },
     methods:{
