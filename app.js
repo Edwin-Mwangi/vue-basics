@@ -8,8 +8,9 @@ const app = Vue.createApp({
         }
     },
     methods:{
-        changeTitle(){
-            this.title= 'Words of Bowl'
+        // can use any name as param eg abc
+        changeTitle(title){ 
+            this.title= title   //this.title = abc
         }
     }
 })

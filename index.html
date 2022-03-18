@@ -13,7 +13,7 @@
         <!-- called from vue -->
         <p>{{ title }} - {{author}} - {{age}}</p>
         <button v-on:click = "age++">Increase age</button>
-        <div @click = "changeTitle">change title</div>
+        <div @click = "changeTitle('The New Age')">change title</div>
     </div>
 
     <script src="app.js"></script>
