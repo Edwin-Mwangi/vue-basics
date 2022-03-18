@@ -10,6 +10,7 @@ const app = Vue.createApp({
             x:0,
             y:0,
             showBooks: true,
+            url:'http:unavailable.com',
 
             books: [
                 {title: 'the final date', author: 'Brandon sand'},
