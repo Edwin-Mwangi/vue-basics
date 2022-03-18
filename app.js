@@ -6,6 +6,11 @@ const app = Vue.createApp({
             author: 'brandon sand',
             age: 45
         }
+    },
+    methods:{
+        handleEvent(e){
+            console.log(e)
+        }
     }
 })
 

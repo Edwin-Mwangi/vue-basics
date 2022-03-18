@@ -6,14 +6,32 @@
     <!-- vue link -->
     <script src="https://unpkg.com/vue@3"></script>
     <title>Document</title>
+    <style>
+        .box{
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #ddd;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-
+    </div>
     <div id = 'app'>
         <!-- called from vue -->
         <p>{{ title }} - {{author}} - {{age}}</p>
         <button v-on:click = "age++">Increase age</button>
         <div @click = "title = 'Something else'">change title</div>
+
+        <br>
+        <!-- other mouse events -->
+        <div id = 'mousestuff'>   
+        <div class="box" @mouseover='handleEvent'>Mouseover(enter)</div>
+        <div class="box"@mouseleave='handleEvent'>Mouse leave</div>
+        <div class="box" @dblclick='handleEvent'>Double click</div>
+        <div class="box"></div>
     </div>
 
     <script src="app.js"></script>
