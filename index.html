@@ -15,8 +15,10 @@
             <p>{{ title }}</p>
         </div>
         
-        <button v-on:click = "age++">Increase age</button>
-        <div @click = "title = 'Something else'">change title</div>
+        <button @click = "toggleShowbooks"> 
+            <span>Hide Books</span>
+        </button>
+        
     </div>
 
     <script src="app.js"></script>

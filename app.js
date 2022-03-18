@@ -7,6 +7,11 @@ const app = Vue.createApp({
             age: 45,
             showBooks: false
         }
+    },
+    methods:{
+        toggleShowbooks(){
+            this.showBooks = !this.showBooks
+        }
     }
 })
 
