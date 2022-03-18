@@ -1,3 +1,5 @@
+// console.log('hello vue')
+
 const app = Vue.createApp({
     //set up stuff here
     data(){
@@ -5,14 +7,23 @@ const app = Vue.createApp({
             title: 'the final empire',
             author: 'brandon sand',
             age: 45,
-            showBooks: false
+            x:0,
+            y:0
         }
     },
     methods:{
-        toggleShowbooks(){
-            this.showBooks = !this.showBooks
+        handleEvent(e, data){
+            console.log(e, e.type)
+            if (data){
+                console.log(data)
+            }
+        },
+        handleMousemove(e){
+            this.x = e.offsetX
+            this.y = e.offsetY
         }
     }
+    
 })
 
 
